@@ -6,7 +6,7 @@ const SWIGGY_MENU_API = process.env.SWIGGY_MENU_API
 
 const initialData = (req, res) => {
 	res.json({
-		test: 'Welcome to FoodZone! - See Live Web URL for this Server - https://foodfire-app.netlify.app',
+		test: 'Welcome to FoodZone! - See Live Web URL for this Server - https://food-zone-aroy.vercel.app/',
 	})
 }
 
