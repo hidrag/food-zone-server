@@ -1,8 +1,8 @@
 # 🌐 FoodZone Server
 
-A FoodZone Server (Node.js web server) that fetches data from a third-party (Swiggy) API and pass it to a client [🚀 FoodZone ](https://foodfire-app.netlify.app/) App 😍.
+A FoodZone Server (Node.js web server) that fetches data from a third-party (Swiggy) API and pass it to a client [🚀 FoodZone ](https://food-zone-aroy.vercel.app/) App 😍.
 
-🍁 [FoodZone App](https://foodfire-app.netlify.app/) is part of [Namaste React Live Course](https://namastedev.com/learn/namaste-react) and Github Repository for this App is [FoodZone Server 💜](https://github.com/hidrag/food-zone-server) ️
+🍁 [FoodZone App](https://food-zone-aroy.vercel.app/) is part of [Namaste React Live Course](https://namastedev.com/learn/namaste-react) and Github Repository for this App is [FoodZone Server 💜](https://github.com/hidrag/food-zone-server) ️
 <br/>
 
 ## 🔥 Clone this Repository
