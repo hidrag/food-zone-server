@@ -1,4 +1,6 @@
-const fetch = require('cross-fetch')
+//const fetch = require('cross-fetch')
+import fetch from 'node-fetch'
+import 'dotenv/config'
 
 const SWIGGY_RESTAURANT_API = process.env.SWIGGY_RESTAURANT_API
 
@@ -12,6 +14,7 @@ const initialData = (req, res) => {
 
 const restaurantsData = async (req, res) => {
 	const { lat, lng, page_type } = req.query
+	console.log('Received lat/lng:', lat, lng)
 
 	const url = `${SWIGGY_RESTAURANT_API}?lat=${lat}&lng=${lng}&page_type=${page_type}`
 
@@ -52,6 +55,8 @@ const restaurantsData = async (req, res) => {
 		if (!response.ok) throw new Error('Internal Server Error')
 		const data = await response.json()
 		res.json(data)
+		console.log('Restaurant data fetched successfully')
+		console.log('Data:', data)
 	} catch (error) {
 		console.error('Error fetching restaurant data:', error.message)
 		res.status(500).send('Error fetching data')
@@ -94,4 +99,4 @@ const menuData = async (req, res) => {
 		})
 }
 
-module.exports = { initialData, restaurantsData, menuData }
+export default { initialData, restaurantsData, menuData }
