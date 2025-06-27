@@ -56,7 +56,7 @@ const restaurantsData = async (req, res) => {
 		const data = await response.json()
 		res.json(data)
 		console.log('Restaurant data fetched successfully')
-		console.log('Data:', data)
+		//console.log('Data:', data)
 	} catch (error) {
 		console.error('Error fetching restaurant data:', error.message)
 		res.status(500).send('Error fetching data')
