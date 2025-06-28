@@ -16,7 +16,8 @@ const PORT = process.env.PORT || 5050
 
 app.use(
 	cors({
-		origin: '*', // frontend origin
+		//origin: '*', // frontend origin
+		origin: 'https://food-zone-pzritkw4m-abhishek-roys-projects-1d872f17.vercel.app/', // frontend origin
 		/* origin: 'http://localhost:5173', */ // frontend origin
 		credentials: true, // allow cookies (if used)
 	})
